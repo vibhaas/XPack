@@ -4,7 +4,7 @@ import os
 
 def terminal(command, place):
      wid = place.winfo_id()
-     os.system('xterm -into '+str(wid)+' -geometry 90x30 -sb -rightbar -fa \'Monospace\' -hold -bg black -fg aqua -e "'+command+'" &') 
+     os.system('xterm -into '+str(wid)+' -geometry 90x30 -sb -rightbar -hold -bg black -fg aqua -e "'+command+'" &') 
 def upgrade():
      if askyesno('Verify', 'Do you really want to start an upgrade?'):
           os.system('sudo killall pacman')
