@@ -9,28 +9,28 @@ def upgrade():
      if askyesno('Verify', 'Do you really want to start an upgrade?'):
           os.system('sudo killall pacman')
           os.system('sudo killall packer')
-          terminal('sudo pacman -Syu', termf)
+          terminal('sudo pacman -Syu; python finished.py', termf)
      else:
           showinfo('No', 'Upgrade has been cancelled!')
 def search():
      if askyesno('Verify', 'Do you really want to search(it can cancel other running processes)?'):
           os.system('sudo killall pacman')
           os.system('sudo killall packer')
-          terminal('packer -Ss '+searchbox.get(), termf)
+          terminal('packer -Ss '+searchbox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Search has been cancelled!')
 def install():
      if askyesno('Verify', 'Do you really want to start an install '+installbox.get()+'?'):
           os.system('sudo killall pacman')
           os.system('sudo killall packer')
-          terminal('packer -S '+installbox.get(), termf)
+          terminal('packer -S '+installbox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Installation has been cancelled!')
 def remove():
      if askyesno('Verify', 'Do you really want to start an remove '+removebox.get()+'?'):
           os.system('sudo killall pacman')
           os.system('sudo killall packer')
-          terminal('sudo pacman -Rs '+removebox.get(), termf)
+          terminal('sudo pacman -Rs '+removebox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Removal has been cancelled!')
 def home():
