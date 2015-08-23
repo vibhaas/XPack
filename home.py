@@ -4,7 +4,7 @@ print "HELP TIP: Pressed something you din't want to? Its ok, just press Ctrl+c 
 
 print "REMEMBER: XPACK DEPENDS ON PACKER"
 
-print "\n\nHow does XPack work?"
+print "\nHow does XPack work?"
 print "--------------------\n"
 print "How does it UPGRADE?"
 print "Easy enough... it just runs 'sudo pacman -Syu'\n"
