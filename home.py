@@ -1,5 +1,5 @@
 print "Hi!"
-print "Welcome to XPack - A package manager for arch linux made of python and a little c."
+print "Welcome to XPack - A simple package manager for arch linux made in python."
 print "HELP TIP: Pressed something you din't want to? Its ok, just press Ctrl+c there or click the correct thing or click  on 'Close All'"
 
 print "REMEMBER: XPACK DEPENDS ON PACKER"
