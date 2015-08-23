@@ -1,6 +1,6 @@
 from Tkinter import *
 from tkMessageBox import *
-import o
+import os
 
 def terminal(command, place):
      wid = place.winfo_id()
