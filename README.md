@@ -9,5 +9,5 @@ First make sure you have the following-
 </ul>
 Next download all the files in master.
 And last go to the directory with the files in it and type-<br>
-<code>sudo python xpack.py</code>
+<code>python xpack.py</code>
 And your done!
