@@ -8,6 +8,6 @@ First make sure you have the following-
 <li><code>packer</code>
 </ul>
 Next download all the files in master.
-And last go to the directory with the files in it and type-<br>
+And last open a terminal and go to the directory with the files in it and type-<br>
 <code>python xpack.py</code>
 And your done!
