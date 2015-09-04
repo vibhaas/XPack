@@ -35,9 +35,7 @@ def remove():
           showinfo('No', 'Removal has been cancelled!')
 def home():
      if askyesno('Verify', 'Do you really want to terminate the currently running process?'):
-          os.system('sudo killall pacman')
-          os.system('sudo killall packer')
-          terminal('python home.py', termf)
+          terminal('sudo killall pacman;sudo killall packer;python home.py', termf)
      else:
           showinfo('No', 'Close all has been cancelled!')
 
