@@ -6,30 +6,22 @@ def terminal(command, place):
      wid = place.winfo_id()
      os.system('xterm -into '+str(wid)+' -geometry 90x30 -sb -rightbar -hold -bg black -fg aqua -e "'+command+'" &') 
 def upgrade():
-     if askyesno('Verify', 'Do you really want to start an upgrade?'):
-          os.system('sudo killall pacman')
-          os.system('sudo killall packer')
+     if askyesno('Verify', 'Do you really want to start an upgrade(if any running processes they will continue in background)?'):
           terminal('sudo pacman -Syu; python finished.py', termf)
      else:
           showinfo('No', 'Upgrade has been cancelled!')
 def search():
-     if askyesno('Verify', 'Do you really want to search(it can cancel other running processes)?'):
-          os.system('sudo killall pacman')
-          os.system('sudo killall packer')
+     if askyesno('Verify', 'Do you really want to search(if any running processes they will continue in background)?'):
           terminal('packer -Ss '+searchbox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Search has been cancelled!')
 def install():
-     if askyesno('Verify', 'Do you really want to start an install '+installbox.get()+'?'):
-          os.system('sudo killall pacman')
-          os.system('sudo killall packer')
+     if askyesno('Verify', 'Do you really want to start install '+installbox.get()+'(if any running processes they will continue in background)?'):
           terminal('packer -S '+installbox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Installation has been cancelled!')
 def remove():
-     if askyesno('Verify', 'Do you really want to start an remove '+removebox.get()+'?'):
-          os.system('sudo killall pacman')
-          os.system('sudo killall packer')
+     if askyesno('Verify', 'Do you really want to start an remove '+removebox.get()+'(if any running processes they will continue in background)?'):
           terminal('sudo pacman -Rs '+removebox.get()+'; python finished.py', termf)
      else:
           showinfo('No', 'Removal has been cancelled!')
